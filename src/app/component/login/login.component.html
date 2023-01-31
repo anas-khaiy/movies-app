@@ -1,0 +1,101 @@
+<!--
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <form>
+                <div class="mb-3">
+                  <label for="emailUser" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="emailUser" name="email" [(ngModel)]="email" >
+                </div>
+                <div class="mb-3">
+                  <label for="passwordUser" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="passwordUser" name="password" [(ngModel)]="password">
+                </div>
+                <button type="button" class="btn btn-primary" (click)="login()">Submit</button>
+              </form>
+              <div class="mb-3 mt-2">
+                <a routerLink="/register"> You don't have an account</a> 
+              </div>
+        </div>
+    </div>
+</div>
+-->
+
+
+
+ 
+
+
+<!--
+
+<link href='https://fonts.googleapis.com/css?family=Changa+One' rel='stylesheet' type='text/css'>
+  
+<div class="box">
+  <div class="page">
+    
+  </div>
+  <div class="is_overlay">
+    <video autoplay loop poster="https://dl.dropboxusercontent.com/u/23834858/videos/bck.jpg" >
+      <source src="assets/videoTrailer2.mp4" type="video/mp4">
+        
+          </video>
+        </div> 
+      </div>
+
+
+     
+     
+    -->
+
+<app-background-video>
+</app-background-video>
+    
+<div id="wrapper" style="z-index: 1000;"  class="animate__animated animate__fadeInDown">
+  <div id="box">
+      <div id="top_header">
+          <h3 style="z-index: 100;" >Login</h3>
+          <div style="display: flex; width: 100%; justify-content: center;">
+            <img src="assets/load.gif" style="height: 50px;width: 50px; display: none;" id="loadIcon" alt="">
+          </div>
+          <h5 style="z-index: 100;">Sign in to continue to your profile page.</h5>
+          
+      </div>
+    
+    <div id="inputs">
+      <form id='login' action='' #f="ngForm" method='post' accept-charset='UTF-8' style="margin-left:6px;">
+    
+    <input type='hidden' name='submitted' id='submitted' value='1'/>
+
+    <div class='container'>
+      <input type='email' name='email' id='username' value='' maxlength="50" size="30" placeholder="email" #emailUser="ngModel" [(ngModel)]="email" required email /><br/>
+      <p style="font-size: 12px; text-align: center ; color: rgb(255, 145, 145);" *ngIf="emailUser.errors?.['required'] && emailUser.touched">Please Insert This Field</p>
+      <p style="font-size: 12px; text-align: center ; color: rgb(255, 145, 145);" *ngIf="emailUser.errors?.['email'] && emailUser.touched">Please Insert An Email Adresse</p>
+    </div>
+    
+    <div class='container'>
+      <input type='password' name='password' id='password' maxlength="50" size="30" placeholder="Password" #passwordUser="ngModel" [(ngModel)]="password" required /><br/>
+      <p style="font-size: 12px; text-align: center ; color: rgb(255, 145, 145);" *ngIf="passwordUser.errors?.['required'] && passwordUser.touched">Please Insert This Field</p>
+
+    </div>
+    
+    <div class='container'>
+      <input type='button' name='Submit' value='Login'  (click)="login()"  />
+    </div>
+    <div class="container">
+      <button type='button' name='Submit' value='Login' style="margin-top: 22px;"  (click)="signInWithGoogle()" ><img src="assets/google.png" style="height: 25px; width: 25px;" alt=""> Sign In With Google</button>
+      <p style="font-size: 12px; text-align: center ; color: rgb(255, 145, 145); margin-top: 20px; display: none;" id="checkLogin" >Please check Your Email Or Password</p>
+    
+    </div>
+
+  </form>
+
+      <div id="bottom">
+        <a href="#" routerLink="/register">Create an account</a>
+        <a class="right_a" routerLink="/forget-password">Forgot password</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+		

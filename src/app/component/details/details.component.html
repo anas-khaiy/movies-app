@@ -1,0 +1,105 @@
+<div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-content">
+
+          <!-- ***** Featured Start ***** -->
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="feature-banner header-text">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <img src="{{movieCurrent.movieImg1}}" alt="" style="border-radius: 23px; width: 300px; height: 390px; object-fit: cover;">
+                  </div>
+                  <div class="col-lg-8">
+                    <youtube-player 
+                      videoId="{{movieCurrent.movieYoutube}}" 
+                      suggestedQuality="highres" 
+                      [width]="750" >
+                    </youtube-player>
+                    <div class="thumb">
+                     <!--  <img src="{{movieCurrent.movieImg2}}" alt="" style="border-radius: 23px; width: 100%; height: 370px; object-fit: cover;" style="border-radius: 23px;">-->
+                     <!-- <a href="{{movieCurrent.movieYoutube}}"  target="_blank"><i class="fa fa-play"></i></a> -->
+                      
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Featured End ***** -->
+
+          <!-- ***** Details Start ***** -->
+          <div class="game-details">
+            <div class="row">
+              <div class="col-lg-12">
+                <h2>{{movieCurrent.movieName}} Details</h2>
+              </div>
+              <div class="col-lg-12">
+                <div class="content">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="left-info">
+                        <div class="left">
+                          <h4>{{movieCurrent.movieName}}</h4>
+                          <span>{{movieCurrent.movieCategorie}}</span>
+                        </div>
+                        <ul>
+                          <li><i class="fa fa-star"></i>{{movieCurrent.movieRating}}</li>
+                          <li><i class="fa fa-download"></i>{{movieCurrent.downloads}}</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="right-info">
+                        <ul>
+                          <li><i class="fa fa-star"></i>{{movieCurrent.movieRating}}</li>
+                          <li><i class="fa fa-download"></i>{{movieCurrent.downloads}}</li>
+                          <li><i class="fa fa-server"></i> {{movieCurrent.size}}</li>
+                          <li><i class="fa fa-gamepad"></i> {{movieCurrent.movieCategorie}}</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <img src="{{movieCurrent.movieImg1}}" alt="" style="border-radius: 23px; margin-bottom: 30px; height: 350px; object-fit: cover;">
+                    </div>
+                    <div class="col-lg-4">
+                      <img src="{{movieCurrent.movieImg2}}" alt="" style="border-radius: 23px; margin-bottom: 30px; height: 350px; object-fit: cover;">
+                    </div>
+                    <div class="col-lg-4">
+                      <img src="{{movieCurrent.movieImg3}}" alt="" style="border-radius: 23px; margin-bottom: 30px; height: 350px; object-fit: cover;">
+                    </div>
+                    <div class="col-lg-12">
+                      <p>{{movieCurrent.movieDescription}}</p>
+                    </div>
+                    <div class="col-lg-12">
+                      
+                      <div class="main-border-button">
+                        <p style="color: #fff; margin-bottom: 20px;">Comments : </p>
+                        <div class="alert" style="background-color:#378ee54a ;" role="alert" *ngFor="let it of listComments">
+                         <p style="color: #fff;">{{it.idUSer}} : <em style="color: #378DE5;">{{it.Comment}} </em></p>   
+                        </div>
+                        <div class="mb-3">
+                          
+                          <textarea class="form-control" id="commentTxt" style="background: #1f2122; border: 2px solid #378DE5; color: #fff;" rows="3" placeholder="Leave Comment ..."></textarea>
+                        </div>
+                        <div class="mb-3">
+                          <input type="submit" (click)="addComment()"  class="btn btn-primary" style="background-color: #378DE5;" value="Add Comment">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- ***** Details End ***** -->
+
+         
+
+        </div>
+      </div>
+    </div>
+  </div>
