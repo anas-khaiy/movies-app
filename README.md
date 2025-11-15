@@ -1,3 +1,16 @@
+<img width="3404" height="1754" alt="image" src="https://github.com/user-attachments/assets/886fecaa-d005-4c59-b4c4-bec9994ebf23" />
+
+
+<img width="1702" height="877" alt="Screenshot 2025-11-15 at 12 49 04 PM" src="https://github.com/user-attachments/assets/b68232ba-e2fd-490a-b3f2-e0574b2a842d" />
+
+<img width="3404" height="1754" alt="image" src="https://github.com/user-attachments/assets/1d3d8774-6d69-4c3b-a5ef-e1f3468a6265" />
+
+<img width="3404" height="1754" alt="image" src="https://github.com/user-attachments/assets/578f2bdf-9609-4f4a-a5e4-895b08631d25" />
+
+
+
+
+
 # FirebaseApp2
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
